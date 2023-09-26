@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* ------------------------------------------------------ */
+/* -- Navigation -- */
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 25px;
+} */
+
+.header,
+.about,
+.projects,
+.experience,
+.social,
+.footer {
+  padding: 50px 25px 25px;
+}
+
+/* ------------------------------------------------------ */
+/* -- Header -- */
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  max-width: 300px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+.header__content {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.header__content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header__content p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header__content button {
+  margin: 25px auto 0;
+  background-color: #00ff00;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 255, 0, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+  outline: none;
+}
+
+.header__content button:hover {
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.6);
+  transform: scale(1.05);
+}
+
+/* ------------------------------------------------------ */
+/* -- About -- */
+
+.about {
+  text-align: center;
+  padding: 0px;
+  background-color: white;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.about h2 {
+  font-size: 42px;
+  margin: 0 0 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 130%;
+  color: #555;
+}
+
+.about__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------ */
+/* -- Projects -- */
+
+.projects__card img {
+  width: 100%; /* This ensures the image scales with its container */
+  height: auto;
+  max-height: 200px; /* You can set a maximum height if needed */
+  margin: 20px 0 10px;
+  border-radius: 8px;
+}
+
+.projects h2 {
+  font-size: 45px;
+  margin: 25px auto;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.projects p {
+  font-size: 18px;
+  line-height: 130%;
+  max-width: 50ch;
+  color: #555;
+  text-align: center;
+}
+
+.projects__cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projects__card {
+  max-width: 350px;
+  padding: 20px;
+  border: 1px solid #0088bb;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects__card:hover {
+  transform: scale(1.05);
+}
+
+.projects__card h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.projects__card p {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #555;
+}
+
+.projects__card img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 10px;
+  border-radius: 8px;
+}
+
+.projects__card .button {
+  margin: 10px 5px 0;
+  background-color: #00ff00;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 255, 0, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.projects__card .button:hover {
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.6);
+  transform: scale(1.05);
+}
+
+/* ------------------------------------------------------ */
+/* -- Education/Experience -- */
+
+.experience h2 {
+  font-size: 42px;
+  margin: 25px auto;
+  color: #333;
+}
+
+.experience ul {
+  margin: 0;
+  padding-left: 50px;
+}
+
+.experience li {
+  font-size: 18px;
+  line-height: 130%;
+  margin: 15px 0;
+  color: #555;
+}
+
+.experience li:before {
+  content: "\2022";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #0088bb;
+}
+
+/* ------------------------------------------------------ */
+/* -- Social Media -- */
+
+.social h2 {
+  font-size: 42px;
+  margin: 25px auto;
+  color: #333;
+}
+
+.social .button {
+  margin: 0 10px;
+  background-color: #00ff00;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 255, 0, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+  outline: none;
+}
+
+.social .button:hover {
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.6);
+  transform: scale(1.05);
+}
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* ------------------------------------------------------ */
+/* -- HTML COMPONENTS: BUTTON -- */
+.button {
+  display: inline-block;
+  background-color: #00ff00;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0088bb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
